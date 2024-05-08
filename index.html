@@ -8,16 +8,14 @@
 </head>
 
 <body>
-<h1>Ejecicio Practico</h1>
-<p>Del siguiente Arreglo de Objetos enlista todos los usuarios que tienen permisos activos, 
-    ya sea por grupo o por usuario, donde statusId es 1 quiere decir que es Activo o 
-    statusId es 0 quiere decir que es Inactivo: </p>
+    <h1>Ejecicio Practico</h1>
+    <p>Del siguiente Arreglo de Objetos enlista todos los usuarios que tienen permisos activos,
+        ya sea por grupo o por usuario, <br> donde statusId es 1 quiere decir que es Activo o
+        statusId es 0 quiere decir que es Inactivo: </p>
 
     <script>
-     let status =   [{ id: 0, StatusDescription: "INACTIVE" }, { id: 1, StatusDescription: "ACTIVE" }];
-
-        let data = [
-            {
+                let status = [{ id: 0, StatusDescription: "INACTIVE" }, { id: 1, StatusDescription: "ACTIVE" }];
+                let data = {
                 Group: [
                     {
                         id: 1,
@@ -74,99 +72,92 @@
                         groupDescription: "prueba",
                         createdDate: "2022-01-29T00:00:00",
                         statusId: 0,
+                    }],
+                Permission: [
+                    {
+                        id: 1,
+                        permissionName: "QC admin",
+                        permissionDescription: "Quality Control Administrators",
+                        createdDate: "2022-09-15T16:27:10.36",
+                        statusId: 1,
                     },
-                ]
-            },
-            {
-                Permission:
-                    [
-                        {
-                            id: 1,
-                            permissionName: "QC admin",
-                            permissionDescription: "Quality Control Administrators",
-                            createdDate: "2022-09-15T16:27:10.36",
-                            statusId: 1,
-                        },
-                        {
-                            id: 2,
-                            permissionName: "Create",
-                            permissionDescription: "Create",
-                            createdDate: "2006-01-29T00:00:00",
-                            statusId: 0,
-                        },
-                        {
-                            id: 20,
-                            permissionName: "testf4c082d5-cc2c-404f-892a-509e44cdee33",
-                            permissionDescription: "Update",
-                            createdDate: "2006-01-29T00:00:00",
-                            statusId: 1,
-                        },
-                        {
-                            id: 21,
-                            permissionName: "prueba5e0c8ba9-e616-4652-a882-4f1b9fdf2ab5",
-                            permissionDescription: "Create",
-                            createdDate: null,
-                            statusId: 0,
-                        },
-                        {
-                            id: 22,
-                            permissionName: "prueba68bfb183-2693-4bd6-a634-2142c44986b7",
-                            permissionDescription: "Create",
-                            createdDate: null,
-                            statusId: 0,
-                        },
-                        {
-                            id: 24,
-                            permissionName: "prueba7fe34a60-b203-42c7-9060-974054608367",
-                            permissionDescription: "Create",
-                            createdDate: null,
-                            statusId: 0,
-                        },
-                        {
-                            id: 25,
-                            permissionName: "test654140f7-4981-4994-9157-5f0a60db55af",
-                            permissionDescription: "Update",
-                            createdDate: "2006-01-29T00:00:00",
-                            statusId: 0,
-                        },
-                        {
-                            id: 26,
-                            permissionName: "pruebaf724faea-577c-4a92-9548-c2e58f14d749",
-                            permissionDescription: "Create",
-                            createdDate: null,
-                            statusId: 0,
-                        },
-                        {
-                            id: 27,
-                            permissionName: "prueba1a6efb7d-6beb-4b0a-9f97-9ecb862058f2",
-                            permissionDescription: "Create",
-                            createdDate: null,
-                            statusId: 0,
-                        },
-                        {
-                            id: 29,
-                            permissionName: "prueba7e12a4d0-87a9-4988-bb3d-79c63382d6aa",
-                            permissionDescription: "Create",
-                            createdDate: null,
-                            statusId: 0,
-                        },
-                        {
-                            id: 32,
-                            permissionName: "prueba95516bf7-8a05-4b7c-a9e9-708c05072023",
-                            permissionDescription: "Create",
-                            createdDate: null,
-                            statusId: 0,
-                        },
-                        {
-                            id: 33,
-                            permissionName: "prueba95516bf7-8a05-4b7c-a9e9-708c05072023",
-                            permissionDescription: "Create",
-                            createdDate: null,
-                            statusId: 1,
-                        },
-                    ]
-            },
-            {
+                    {
+                        id: 2,
+                        permissionName: "Create",
+                        permissionDescription: "Create",
+                        createdDate: "2006-01-29T00:00:00",
+                        statusId: 0,
+                    },
+                    {
+                        id: 20,
+                        permissionName: "testf4c082d5-cc2c-404f-892a-509e44cdee33",
+                        permissionDescription: "Update",
+                        createdDate: "2006-01-29T00:00:00",
+                        statusId: 1,
+                    },
+                    {
+                        id: 21,
+                        permissionName: "prueba5e0c8ba9-e616-4652-a882-4f1b9fdf2ab5",
+                        permissionDescription: "Create",
+                        createdDate: null,
+                        statusId: 0,
+                    },
+                    {
+                        id: 22,
+                        permissionName: "prueba68bfb183-2693-4bd6-a634-2142c44986b7",
+                        permissionDescription: "Create",
+                        createdDate: null,
+                        statusId: 0,
+                    },
+                    {
+                        id: 24,
+                        permissionName: "prueba7fe34a60-b203-42c7-9060-974054608367",
+                        permissionDescription: "Create",
+                        createdDate: null,
+                        statusId: 0,
+                    },
+                    {
+                        id: 25,
+                        permissionName: "test654140f7-4981-4994-9157-5f0a60db55af",
+                        permissionDescription: "Update",
+                        createdDate: "2006-01-29T00:00:00",
+                        statusId: 0,
+                    },
+                    {
+                        id: 26,
+                        permissionName: "pruebaf724faea-577c-4a92-9548-c2e58f14d749",
+                        permissionDescription: "Create",
+                        createdDate: null,
+                        statusId: 0,
+                    },
+                    {
+                        id: 27,
+                        permissionName: "prueba1a6efb7d-6beb-4b0a-9f97-9ecb862058f2",
+                        permissionDescription: "Create",
+                        createdDate: null,
+                        statusId: 0,
+                    },
+                    {
+                        id: 29,
+                        permissionName: "prueba7e12a4d0-87a9-4988-bb3d-79c63382d6aa",
+                        permissionDescription: "Create",
+                        createdDate: null,
+                        statusId: 0,
+                    },
+                    {
+                        id: 32,
+                        permissionName: "prueba95516bf7-8a05-4b7c-a9e9-708c05072023",
+                        permissionDescription: "Create",
+                        createdDate: null,
+                        statusId: 0,
+                    },
+                    {
+                        id: 33,
+                        permissionName: "prueba95516bf7-8a05-4b7c-a9e9-708c05072023",
+                        permissionDescription: "Create",
+                        createdDate: null,
+                        statusId: 1,
+                    }],
                 User: [
                     {
                         id: 1,
@@ -317,10 +308,7 @@
                         createdDate: "2021-07-05T18:45:14.587",
                         customNumber: null,
                         statusId: 0,
-                    },
-                ]
-            },
-            {
+                    }],
                 UserPermission: [
                     {
                         id: 1,
@@ -328,24 +316,21 @@
                         permissionId: 1,
                         statusId: 0
 
-                    },
-                    {
-                        id: 2,
-                        userId: 3,
-                        permissionId: 22,
-                        statusId: 0
+                },
+                {
+                    id: 2,
+                    userId: 3,
+                    permissionId: 22,
+                    statusId: 0
 
-                    },
-                    {
-                        id: 3,
-                        userId: 6,
-                        permissionId: 27,
-                        statusId: 1
+                },
+                {
+                    id: 3,
+                    userId: 6,
+                    permissionId: 27,
+                    statusId: 1
 
-                    }
-                ]
-            },
-            {
+                    }],
                 UserGroup: [
                     {
                         id: 2,
@@ -364,10 +349,7 @@
                         userId: 13,
                         groupid: 7,
                         statusId: 1
-                    }
-                ]
-            },
-            {
+                    }],
                 GruopPermission: [
                     {
                         id: 4,
@@ -392,10 +374,11 @@
                         groupId: 61,
                         permissionId: 33,
                         statusId: 1
-                    }
-                ]
-            }
-        ];
+                                        }]
+                                };
+
+
+                                console.log(data.GruopPermission)
     </script>
 
 </html>
